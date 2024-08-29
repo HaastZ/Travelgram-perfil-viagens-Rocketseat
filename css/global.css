@@ -15,7 +15,28 @@
     --text-color-secondary: #6C6C6C;
     --font-family: 'Poppins', sans-serif;
     --h1: 800 2rem/125% var(--font-family);
-    --paragraph-md: 400 0.75rem/170% var(--font-family);
-    --paragraph-sm: 400 0.25rem/170% var(--font-family);
+    --paragraph-md: 400 0.875rem/170% var(--font-family);
+    --paragraph-sm: 400 0.75rem/170% var(--font-family);
 }
 
+body {
+    margin: 2rem;
+}
+
+h1 {
+    font: var(--h1);
+    color: var(--text-color-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-color);
+}
+
+a, p {
+    color: var(--text-color-secondary);
+    font: var(--paragraph-md);
+}
