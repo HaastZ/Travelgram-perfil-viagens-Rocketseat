@@ -1,0 +1,31 @@
+header {
+    background-color: var(--surface-color);
+    padding: 2rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & div {
+            display: flex;
+            gap: 1rem;
+        }
+
+        & :nth-child(3) img {
+            width: 2.5rem;
+        }
+    }
+}
+
+@media (width >= 80rem) {
+    header nav ul .desktop-only {
+        display: flex;
+    }
+}
